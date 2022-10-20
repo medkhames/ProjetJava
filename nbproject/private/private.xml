@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/ConnexionProduit/src/prod/gui/GProduit.fxml</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/ConnexionProduit/src/prod/services/AchatCRUD.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/ConnexionProduit/src/prod/tests/MainCnxProd.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/ConnexionProduit/src/prod/gui/GestionProduit.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/ConnexionProduit/src/prod/gui/GProduitController.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/ConnexionProduit/src/prod/entity/Achat.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/ConnexionProduit/src/prod/services/ProduitCRUD.java</file>
         </group>
     </open-files>
 </project-private>

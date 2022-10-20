@@ -94,7 +94,7 @@ public class ProduitCRUD {
             ResultSet rs = st.executeQuery(req2);
             while(rs.next()){
                 Produit p = new Produit();
-                p.setId_prod(rs.getInt(1));
+               // p.setId_prod(rs.getInt(1));
                 p.setNom_prod(rs.getString("nom_prod"));
                 p.setDiscription(rs.getString("discription"));
                 p.setReference(rs.getString("reference"));
