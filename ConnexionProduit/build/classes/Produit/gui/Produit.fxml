@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Produit.gui.ProduitController">
+   <children>
+      <Pane prefHeight="507.0" prefWidth="850.0" style="-fx-background-color: #87CEFA;">
+         <children>
+            <TableView fx:id="tableProduit" layoutX="3.0" layoutY="296.0" prefHeight="210.0" prefWidth="844.0">
+              <columns>
+                <TableColumn fx:id="Nom_Produit" prefWidth="150.0" text="Nom Produit" />
+                <TableColumn fx:id="Discription" prefWidth="150.0" text="Discription" />
+                  <TableColumn fx:id="Reference" prefWidth="150.0" text="Référence" />
+                  <TableColumn fx:id="Prix" prefWidth="150.0" text="Prix" />
+                  <TableColumn fx:id="Categories" prefWidth="150.0" text="Catégories" />
+                  <TableColumn fx:id="Id_Prod" prefWidth="92.0" text="Id Prod" />
+              </columns>
+            </TableView>
+            <Label layoutX="30.0" layoutY="118.0" prefHeight="30.0" prefWidth="75.0" text="Nom_prod :">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="200.0" text="Discription :">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="58.0" text="Référence :">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="276.0" layoutY="125.0" text="Prix :">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="302.0" layoutY="200.0" text="Catégories">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fxNP" layoutX="30.0" layoutY="155.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="fxDS" layoutX="30.0" layoutY="225.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="fxRF" layoutX="270.0" layoutY="85.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="fxPR" layoutX="270.0" layoutY="155.0" prefHeight="25.0" prefWidth="150.0" />
+            <ComboBox fx:id="fxCT" layoutX="270.0" layoutY="225.0" onAction="#selectCT" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="486.0" layoutY="50.0" text="Recherche :">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fxRC" layoutX="473.0" layoutY="85.0" onKeyPressed="#recherche" prefHeight="25.0" prefWidth="150.0" />
+            <Button fx:id="btENR" layoutX="638.0" layoutY="51.0" mnemonicParsing="false" onAction="#addP" prefHeight="30.0" prefWidth="150.0" text="Enregistrer">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btMOD" layoutX="638.0" layoutY="110.0" mnemonicParsing="false" onAction="#modP" onKeyPressed="#UpProd" prefHeight="30.0" prefWidth="150.0" text="Modifier">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btSUP" layoutX="638.0" layoutY="165.0" mnemonicParsing="false" onAction="#supP" prefHeight="30.0" prefWidth="150.0" text="Supprimer">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btACT" layoutX="638.0" layoutY="223.0" mnemonicParsing="false" onAction="#actP" prefHeight="30.0" prefWidth="150.0" text="Actualiser">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Acceuil">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="30.0" layoutY="58.0" text="Id_prod :">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fxID" layoutX="30.0" layoutY="85.0" prefHeight="25.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
